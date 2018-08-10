@@ -1,0 +1,208 @@
+<!DOCTYPE HTML 5>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+	<title>VS Ranking</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="A description of the page">
+	<meta name="subject" content="your document's subject">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="keywords" content="Rank,Star Rank,The best Rank,The rank Food,best food,melhor comida,rank de comida,Ranking de comida."/>
+	<link rel="icon" sizes="32x32" href="./imagens/r.png">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Showcard+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Leelawadee+UI" rel="stylesheet">
+    <style type="text/css">
+
+    	body{
+			margin:0px;
+			display: grid;
+			width: 100%; 
+			height: 100%;
+			grid-template-rows: 1fr 92%;
+			grid-template-areas: "header" 
+								 "main"	
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		.header{
+			display: grid;
+			width: 100%;
+			grid-template-rows: 50px;
+			grid-template-columns: 20% 58% 20%;
+			background-color: white;
+		}
+
+		.header a{
+			font-weight: bolder;
+			font-size: 20px;
+			color: black;
+		}
+
+		.header-left{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.header-middle{
+			display: flex;
+			align-items: center;
+		}
+
+		.header-middle input{
+			padding: 6px 0px;
+		}
+
+		.header input{
+			width: 94%;
+		}
+
+		.header a:nth-child(3){
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.moresize{
+			padding-top: 4.2px;
+		} 
+
+
+		.fa-search{
+			background-color: #1C1C1C;
+			padding: 6px;
+			margin-left: 5px;
+			color: white;
+		}
+
+		/*.................................................. Second Frame .......................................*/
+
+		.main{
+			grid-area: main;
+			background: center/contain url(./imagens/gi.gif);
+			background-position: 38vw 7vh;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			color: #1C1C1C;
+			display: grid;
+			grid-auto-rows: 1fr 1fr;
+		}
+
+		.backbranco{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			margin: 25px 0px 0px 6vw;
+		}
+
+		span{
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+			margin: 0px 30px 20px 0px;
+			font-size: 50px;
+		}
+		span div i{
+			margin: 7px;
+		}
+
+		/*..................................................... The Media ......................................*/
+		@media screen and (max-width: 1000px){
+			.main{
+				background-position: 38vw 14vh;
+			}
+		}
+
+		@media screen and (max-width: 815px){
+			.main{
+				background-position: 38vw 24vh;
+			}	
+		}
+		@media screen and (max-width: 557px){
+			.main{
+				background-position: 38vw 28vh;
+			}		
+		}
+		@media screen and (max-width: 537px){
+			.header .none{
+				font-size: 18px;
+			}
+			.main{
+				background-image: none;
+				background-color: black;
+				color: white;
+			}	
+		}
+
+		@media screen and (max-width: 480px){
+			.header .none{
+				font-size: 15px;
+			}
+		}
+
+		@media screen and (max-width: 395px){
+			.none{
+				display: none;
+			}
+		}
+
+		@media screen and (min-width: 395px){
+			.fa-sign-in-alt{
+				display: none;
+			}
+			.moresize{
+				display: none;
+			}
+		}
+
+		@media screen and (min-width: 537px){
+			span{
+				color: gainsboro;
+			}	
+		}
+
+		@media screen and (min-width: 980px){
+			span{
+				color: #1C1C1C;
+			}
+		}
+
+    </style>
+</head>
+<body>
+	<div class="header">	
+		<div class="header-left">
+			<a href=""><i class="material-icons moresize">more_vert</i></a> 
+			<a href="" class="none">Tipos</a>
+		</div>
+		<div class="header-middle">	
+			<input type="text" name="search">
+			<a href=""><i class="fas fa-search shrink"></i></a>
+		</div>	  
+		<a href=""><i class="fas fa-sign-in-alt"></i><p class="none">Cadastre-se</p></a> 
+	</div>
+	<div class="main">
+		<div class="backbranco">
+			<h2><i class="far fa-hand-point-right"></i>&ensp;Sua pesquisa não encontrou nenhum resultado</h2>
+			<p><i class="fas fa-circle"></i>&ensp;Tenha certeza de que todas as palavras estão escritas corretamente.</p>
+			<p><i class="fas fa-circle"></i>&ensp;Tente palavras-chave diferentes.</p>
+			<p><i class="fas fa-circle"></i>&ensp;Tente palavras-chave mais genéricas.</p>
+		</div>
+		<span>
+			<div>
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-instagram"></i>
+			</div>
+		</span>
+	</div>
+</body>
+</html>

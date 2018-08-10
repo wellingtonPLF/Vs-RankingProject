@@ -1,0 +1,626 @@
+
+/*------------------------------------------------------@@ Lest's stars @@-----------------------------------------------------------------*/
+
+body{
+	margin: 0px;
+	display: grid;
+	width: 100%; 
+	grid-template-rows: 0% 100% 100% 100% 100% 100% 100%;
+	grid-template-areas: "header"
+						 "main"
+						 "rank"
+						 "about"
+						 "links"
+						 "after"
+						 "lasts";
+}
+
+a{
+	text-decoration: none;
+}
+
+/*-------------------------------------------------------@@ Frist Frame @@-----------------------------------------------------------------*/
+
+.header{
+	display: grid;
+	width: 100%;
+	grid-template-rows: 50px;
+	grid-template-columns: 20% 58% 20%;
+	position: fixed;
+	z-index: 20;
+	background-color: white;
+}
+
+.header a{
+	font-weight: bolder;
+	font-size: 20px;
+	color: #8B2323;
+}
+
+.header-left{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-middle{
+	display: flex;
+	align-items: center;
+}
+
+.header input{
+	width: 94%;
+	height: 50%;
+}
+
+.header a:nth-child(3){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.moresize{
+	padding-top: 4.2px;
+} 
+
+
+.fa-search{
+	background-color: red;
+	padding: 6px;
+	margin-left: 5px;
+	color: white;
+}
+
+/*-------------------------------------------------------@@ Second Frame @@-----------------------------------------------------------------*/
+
+.main{
+	background: center/cover url(imagens/ur.jpg);
+	background-attachment: fixed;
+	grid-area: main;
+	display: grid;
+	height: 100%;
+	min-height: 100vh;
+	grid-template-rows: 40% 26% 33%;
+	grid-template-columns: 100%;
+}
+
+.main h1{
+	text-align: center;
+	color: white; 
+	font-size: 75px;
+	margin-bottom: 0px;
+}
+
+.main p{
+	text-align: center;
+	color: white;
+	font-size: 27px;
+}
+
+.main a{
+	border: 3px solid red;
+	box-shadow: 0px 0px 1px 2px #EE0000;
+	background-color:red;
+	padding: 20px 50px 20px 50px;
+	color: white;
+}
+
+#h1{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#a{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+
+/*-------------------------------------------------------@@ Third Frame @@-----------------------------------------------------------------*/
+
+.ranking{
+	grid-area: rank;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.rank{
+	display: grid;
+	width: 100%;
+	grid-template-rows: repeat(2,1fr);
+	grid-gap: 0px;
+}
+
+.coluna{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.size-img{
+	width: 500px; 
+	height: 150px;
+	clip-path: polygon(80% 0%, 100% 50%,80% 100%,0% 100%,0% 0%);
+}
+.coluna span:first-child{
+	margin-bottom: 0px;
+}
+
+span{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 530px; 
+	height: 170px;
+	clip-path: polygon(83.5% 3%, 100% 49%, 83.5% 95%,19.7% 95%, 0% 50%,19.7% 3%);
+	background-color: #CD0000;
+	padding-left: 100px;
+}
+
+span::before{
+	position: relative;
+	color: white;
+	right: 30px;
+	font-size: 40px;
+	z-index: 10;
+}
+.n1{
+	margin-top: 10px; 
+}
+.n1::before{
+	content: "1";
+}
+.n2::before{
+	content: "2";
+}
+.n3::before{
+	content: "3";
+}
+.n4::before{
+	content: "4";
+}
+
+/*-------------------------------------------------------@@ Fourth Frame @@-----------------------------------------------------------------*/
+
+.about{
+	grid-area: about;
+    background-image: linear-gradient(45deg, orange,red), url(imgens/hexa.jpg);
+  	filter: contrast(150%);
+}
+
+.distance{
+	width: 100%;
+	height: 100%;
+	min-height: 50vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.about img{
+	height: 100px;
+	width: 100px;
+	border: 5px solid white;
+	border-radius: 50%;
+}
+
+.flexy{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.about p{
+	width: 400px;
+	color: white;
+	font-family: "Calibri", sans-serif;
+}
+
+.about b{
+	color: #F0FFF0;
+	font-size: 18px;
+}
+
+/*-------------------------------------------------------@@ Fifth Frame @@-----------------------------------------------------------------*/
+
+.links{
+	grid-area: links;
+	height: 100%;
+	min-height: 60vh;
+}
+
+.links p{
+	width: 80%;
+	min-width: 70vw;
+	margin-bottom: 80px;
+	font-family: "Calibri", sans-serif;
+}
+
+.links h3{
+	margin: 60px 0px 30px 0px;
+	font-size: 25px;
+}
+
+.element {  
+	float: left;
+    background-image: url(imagens/seafood.jpg);
+    background-repeat: no-repeat;
+    width: 260px;
+	height: 220px;
+	margin-right: 10px;
+	clip-path: polygon(100% 70%,80% 100%,20% 100%,0% 70%,50% 0%);
+    shape-outside: polygon(100% 60%,80% 100%,20% 100%,0% 60%,50% 0%) border-box;
+    shape-margin: 1.5em;
+}
+
+/*-------------------------------------------------------@@ Sixth Frame @@-----------------------------------------------------------------*/
+
+.after{
+	grid-area: after;
+	height: 100%;
+	min-height:30vh;
+	display: flex;
+	width: 97vw;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.after img{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+/*-------------------------------------------------------@@ Seventh Frame @@-----------------------------------------------------------------*/
+
+.last{
+	grid-area: lasts;
+	background-color: red;
+	height: 25vh;
+	width: 100%;
+	margin-top: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.last a{
+	color: white;
+}
+
+.centralizar{
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+}
+
+.centralizar i{
+	font-size: 50px; 
+}
+
+.PAT{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	font-weight: bolder;
+	margin-top: 30px;
+}
+
+/*------------------------------------------------------@@ The media place @@-----------------------------------------------------------------*/
+
+													/*@@@@  Max Medias  @@@@*/
+@media screen and (max-width: 879px){
+	.about img{
+		margin-top: 30px
+	}
+	.distance{
+		margin-top: 20px;
+/*		flex-wrap: nowrap;
+		flex-direction: column;
+		justify-content: unset;*/
+	}
+}
+@media screen and (max-width: 799px){														
+	.coluna{
+		justify-content: flex-end;
+	}
+
+	.rank .coluna:nth-child(2){
+		justify-content: flex-start;
+	}						
+}			
+@media screen and (max-width: 650px){
+	span{
+		width: 400px;
+		height: 150px;
+		padding-left: 65px;
+		clip-path: polygon(81.5% 7%,97.5% 48%,81.5% 91%,20.5% 91%,3% 48%,20.5% 7%);
+	}
+	.size-img{
+		width: 350px;
+		height: 120px;
+	}
+	span::before{
+		font-size: 30px;
+		bottom: 3.5px;
+		right: 20px;
+	}
+	.links{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}	
+	.links p{
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: 615px){
+	.after img{
+		width: 150px;
+		height: 150px;
+	}
+	.links p{
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 537px){
+	.header .none{
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.main{
+		grid-template-rows: 50% 25% 5%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	span{
+		width: 350px; 
+		height: 120px;
+		clip-path: polygon(81.5% 4%,97.5% 48%,81.5% 93%,20.5% 93%,3% 48%,20.5% 4%);
+		padding-left: 65px;
+	}
+	.size-img{
+		width: 300px; 
+		height: 100px;
+		clip-path: polygon(80% 0%, 100% 50%,80% 100%,0% 100%,0% 0%);
+	}
+	span::before{
+		font-size: 30px;
+		bottom: 3.5px;
+		right: 20px;
+	}
+	.header .none{
+		font-size: 15px;
+	}
+	.ranking{
+		min-height: 60vh;
+	}
+	.after img{
+		width: 120px;
+		height: 120px;
+	}
+}
+
+@media screen and (max-width: 435px){
+	.main div p{
+		font-size: 20px;
+	}
+	span{
+		padding-left: 0px;
+		clip-path: none;
+		background-color: unset;
+	}
+	.size-img{
+		clip-path: none;
+		border: 3px solid maroon;
+	}
+	span::before{
+		right: 0px;
+		padding: 37px 10px 35px 10px;
+		left: 0px;
+		bottom: 2px;
+		background-color: maroon;
+	}
+	.last .PAT a{
+		font-size: 10px;
+		justify-content: space-between;
+		width: 20%;
+	}
+}
+
+@media screen and (max-height: 435px){
+	.main a{
+		border: 3px solid red;
+		box-shadow: 0px 0px 1px 2px #EE0000;
+		background-color:red;
+		padding: 10px 25px 10px 25px;
+		color: white;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.about p{
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 395px){
+	.none{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 380px){
+	.after img{
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media screen and (max-width: 365px){
+	.size-img{
+		width: 250px;
+		height: 90px;
+	}
+	span::before{
+		padding: 31px 10px 31px 10px;
+		bottom: 2px;
+	}	
+}
+
+@media screen and (max-width: 330px){
+	.size-img{
+		width: 220px;
+	}
+}
+														     	/*@@@@  Min Medias  @@@@*/
+@media screen and (min-width: 395px){
+	.fa-sign-in-alt{
+		display: none;
+	}
+	.moresize{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 650px){
+	.links .element{
+		float: left;
+		margin-left: 7vw;
+	}
+	.links p{
+		margin-left: 7vw;
+	}
+	.links h3{
+		text-align: center;
+	}
+	.links{
+
+	}
+
+}
+
+@media screen and (min-width: 800px){
+	.size-img{
+		width: 300px; 
+		height: 100px;
+		clip-path: polygon(80% 0%, 100% 50%,80% 100%,0% 100%,0% 0%);
+	}
+	.rank{
+		grid-template-rows: 1fr;
+		grid-template-columns: repeat(2,1fr);
+	}
+	span{
+		width: 350px; 
+		height: 120px;
+		clip-path: polygon(81.5% 4%,97.5% 48%,81.5% 93%,20.5% 93%,3% 48%,20.5% 4%);
+		padding-left: 50px;
+	}
+	span::before{
+		font-size: 30px;
+		bottom: 3.5px;
+		right: 20px;
+	}
+	.n1{
+		margin-top: 0px;
+	}
+	.coluna span:first-child{
+    	margin-bottom: 50px;
+	}
+	.flexy{
+		margin: 0px 20px;
+	}
+}
+
+@media screen and (min-width: 935px){
+	span{
+		width: 400px;
+		height: 150px;
+		padding-left: 65px;
+		clip-path: polygon(81.5% 7%,97.5% 48%,81.5% 91%,20.5% 91%,3% 48%,20.5% 7%);
+	}
+	.size-img{
+		width: 350px;
+		height: 120px;
+	}
+}
+
+@media screen and (min-width: 1050px){
+	.links p{
+		font-size: 17px;
+	}
+}
+
+@media screen and (min-width: 1100px){
+	span{
+		width: 435px;
+		height: 160px;
+		padding-left: 100px;
+		clip-path: polygon(84.5% 3%, 100% 49%, 84.5% 95%,24% 95%, 5% 50%,24% 3%);
+	}
+	.size-img{
+		width: 400px;
+		height: 140px;
+	}
+	span::before{
+		font-size: 50px;
+	}
+}
+
+@media screen and (min-width: 1300px){
+	span{
+		width: 535px;
+		height: 170px;
+		padding-left: 100px;
+		clip-path: polygon(84% 3%, 100% 49%, 84% 95%,19.7% 95%, 0% 50%,19.7% 3%);
+	}
+	.size-img{
+		width: 500px;
+		height: 150px;
+	}
+	span::before{
+		font-size: 50px;
+	}
+}
+
+@media screen and (min-width: 1370px){
+	.links p{
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 1700px){
+	.main div h1{
+		font-size: 150px;
+	}
+	.main div p{
+		font-size: 38x;
+	}
+	.links p{
+		font-size: 25px;
+	}
+}
+
+/*##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####  @- End -@ ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### */
+
+

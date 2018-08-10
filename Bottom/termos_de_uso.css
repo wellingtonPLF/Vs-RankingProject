@@ -1,0 +1,171 @@
+body{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  min-width: 400px;
+}
+
+/* imagens */
+
+.primeiro{
+  background-image: url(images/terere.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.segundo{
+  background-image: url(images/china_taiwan.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.terceiro{
+  background-image: url(images/bardocuzcuz.jpg);
+  background-position: center;
+  background-size: 105%;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;  
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: underline;
+}
+
+/* BARRA SUPERIOR*/
+
+.bloc1{
+  display: grid;
+  grid-template-columns: 1fr 5fr 10fr 1fr 10fr;
+  grid-template-areas: "icon" "tipos"   "barra_pesquisa"   "icone_pesquisa"   "cadastrar";
+  background-color: rgb(240, 240, 240);
+  padding: 12px;
+  padding-left: 20px;
+  line-height: 1.5;
+  text-decoration-color: black;
+  position: fixed;
+  width: 100%;
+  min-width: 400px;
+}
+ .icon{
+   text-align: right;
+   padding-right: 10px;
+
+ }
+
+.tipos{
+  margin-right: 10px;
+}
+
+.barra_pesquisa{
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+}
+
+.barra_pesquisa input{
+  position: static;
+  height: 25px;
+  width: 97%;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid rgb(194, 194, 194);
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+
+.icone_pesquisa{
+  padding: 3px;
+  padding-left: 10px;
+  text-align: center;
+  display: none;
+}
+
+@media (min-width:450px){
+  .icone_pesquisa{
+    display: block;
+  }
+}
+
+.cadastrar{
+  grid-column: 4 / 6;
+  text-decoration-line: none;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+@media (min-width:450px){
+  .cadastrar{
+    grid-column: 5 / 6;
+  }
+}
+
+/*BANNER */
+
+.bloc2 img{
+  width: 100%;
+  padding-top: 54px;
+}
+
+/*CONTEÚDO */
+
+.term {
+  font-size: 20px;
+  min-width: 320px;
+  padding: 0 10vw;
+  text-align: justify;
+}
+
+.term h1{
+  text-align: center;
+}
+
+@media (min-width: 320px){
+  .term{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+  }
+
+}
+
+@media (min-width: 768px){
+  .term{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    font-size: 25px;
+
+  }
+}
+
+@media (min-width: 1024px){
+  .term{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+  }
+}
+
+
+/*BARRA INFERIOR*/
+
+.bloc4{
+  background-color: rgb(240, 240, 240);
+}

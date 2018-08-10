@@ -1,0 +1,254 @@
+body{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  min-width: 400px;
+}
+
+/* imagens */
+
+.primeiro{
+  background-image: url(images/gulliver-mar.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.segundo{
+  background-image: url(images/china_taiwan.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.terceiro{
+  background-image: url(images/pizzas-feitas-com-massa.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.quarto{
+  background-image: url(images/salao-principal.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.quinto{
+  background-image: url(images/salao-principal.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.sexto{
+  background-image: url(images/peixada-do-amor-2-largejpg.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.setimo{
+  background-image: url(images/sorveteira-delicias-do.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.oitavo{
+  background-image: url(images/adega-do-alfredo.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;  
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: underline;
+}
+
+/* BARRA SUPERIOR*/
+
+.bloc1{
+  display: grid;
+  grid-template-columns: 1fr 5fr 10fr 1fr 10fr;
+  grid-template-areas: "icon" "tipos"   "barra_pesquisa"   "icone_pesquisa"   "cadastrar";
+  background-color: rgb(240, 240, 240);
+  padding: 12px;
+  padding-left: 20px;
+  line-height: 1.5;
+  text-decoration-color: black;
+  position: fixed;
+  width: 100%;
+  min-width: 400px;
+}
+ .icon{
+   text-align: right;
+   padding-right: 10px;
+
+ }
+
+.tipos{
+  margin-right: 10px;
+}
+
+input,label:active{
+  transition: transform 1s;
+  will-change: transform;
+}
+
+label:active{
+  transform: translateY(10px);
+}
+
+
+.barra_pesquisa{
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+}
+
+.barra_pesquisa input{
+  position: static;
+  height: 25px;
+  width: 97%;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid rgb(250, 140, 140);
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+
+.icone_pesquisa{
+  padding: 3px;
+  padding-left: 10px;
+  text-align: center;
+  display: none;
+}
+
+@media (min-width:450px){
+  .icone_pesquisa{
+    display: block;
+  }
+}
+
+.cadastrar{
+  grid-column: 4 / 6;
+  text-decoration-line: none;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+@media (min-width:450px){
+  .cadastrar{
+    grid-column: 5 / 6;
+  }
+}
+
+/*BANNER */
+
+.bloc2 img{
+  width: 100%;
+  padding-top: 54px;
+}
+
+/*CONTEÚDO */
+
+.bloc3{
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 5px;
+  font-size: 25px;
+  min-width: 320px;
+  margin: auto;
+}
+
+@media (min-width: 320px){
+  .bloc3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    min-width: 2fr;
+    margin: auto;
+  }
+
+}
+
+@media (min-width: 768px){
+  .bloc3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    min-width: 750px;
+    margin: auto;
+  }
+
+}
+
+@media (min-width: 1024px){
+  .bloc3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    min-width: 1000px;
+    margin: auto;
+  }
+}
+
+.rank{
+  padding: .1px;
+}
+
+p{
+  background-color: rgba(255, 255, 255, 0.76);
+  padding: 0 10px;
+  margin-right: 250px;
+}
+
+.classification{
+	margin-top: 150px;
+	text-align: center;
+	font-size: 25px;
+}
+
+ .border_icone{
+   font-size: 33px;
+   margin-bottom: -33px;
+   color: red;
+  }
+  
+  .incone i{
+  margin: 0 4.5px ;
+  color: yellow;
+} 
+
+/*BARRA INFERIOR*/
+
+.bloc4{
+  background-color: rgb(240, 240, 240);
+}
