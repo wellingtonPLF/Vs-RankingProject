@@ -2,24 +2,24 @@
 /*------------------------------------------------------@@ Lest's stars @@-----------------------------------------------------------------*/
 
 body{
+	overflow-x: hidden;
 	margin: 0px;
+}
+
+.bodygride{
 	display: grid;
 	width: 100%; 
-	grid-template-rows: 0% 100% 100% 100% 100% 100% 100%;
-	grid-template-areas: "header"
-						 "main"
+	grid-template-rows: 1fr 1fr 650px;
+	grid-template-areas: "main"
 						 "rank"
-						 "about"
-						 "links"
-						 "after"
-						 "lasts";
+						 "links";
 }
 
 a{
 	text-decoration: none;
 }
 
-/*-------------------------------------------------------@@ Frist Frame @@-----------------------------------------------------------------*/
+/*-------------------------------------------------------@@ Header Frame @@-----------------------------------------------------------------*/
 
 .header{
 	display: grid;
@@ -70,9 +70,10 @@ a{
 	color: white;
 }
 
-/*-------------------------------------------------------@@ Second Frame @@-----------------------------------------------------------------*/
+/*-------------------------------------------------------@@ Screen Frame @@-----------------------------------------------------------------*/
 
 .main{
+	grid-area: main;
 	background:  center/cover url(imagens/like.jpg);
 	background-attachment: fixed;
 	height: 100%;
@@ -90,9 +91,10 @@ a{
 	margin-bottom: 0px;
 }
 
-/*-------------------------------------------------------@@ Third Frame @@-----------------------------------------------------------------*/
+/*-------------------------------------------------------@@ Grafic Frame @@-----------------------------------------------------------------*/
 
 .rank{
+	grid-area: rank;
 	display: grid;
 	height: 100%;
 	min-height: 100vh;
@@ -108,7 +110,7 @@ a{
 }
 
 .rank h1{
-	margin: 50px 0px 50px 20px;
+	margin: 15px 0px 50px 20px;
 	font-size: 52px;
 	color: #1C1C1C;
 
@@ -124,8 +126,6 @@ a{
 
 .associação{
 	height: 220px;
-	display: flex;
-	justify-content: space-around;
 	flex-direction: column;
 	margin-top: 20px;
 	width: 40vw;
@@ -133,6 +133,7 @@ a{
 
 .rank span p{
 	margin-left: 10px;
+	margin-top: 5px;
 }
 
 .rank span{
@@ -140,28 +141,17 @@ a{
 	align-items: center;
 }
 
-/*-------------------------------------------------------@@ Fourth Frame @@-----------------------------------------------------------------*/
-
-.about{
-	grid-area: about;
-	height: 50px;
-	margin: 0px 0px 20px 0px;
-	display: flex;
-	justify-content: flex-end;
-}
-.about img{
+.stars img{
 	width: 260px;
 	height: 50px;
+	margin-top: 50px;
 }
 
-/*-------------------------------------------------------@@ Fifth Frame @@-----------------------------------------------------------------*/
+
+/*-------------------------------------------------------@@ About Frame @@-----------------------------------------------------------------*/
 
 .links{
 	grid-area: links;
-	height: 100%;
-	display: grid;
-	width: 100%;
-	grid-template-rows: 1fr;
 	background-image: linear-gradient(35deg, #1E90FF, #4682B4);
 }
 
@@ -172,7 +162,6 @@ a{
 .links span{
 	display: flex;
 	flex-direction: column;
-	/*justify-content: center;*/
 	align-items: center;
 	margin-bottom: 20px;
 	margin-right: 10px;
@@ -215,11 +204,10 @@ a{
 	justify-content: unset;
 }
 
-/*<!-- ..................................................................................................................... -->*/
+/*<!-- .................................................@@ Footer Frame @@................................................... -->*/
 
 .after{
-	grid-area: after;
-	width: 100%;
+	width: 100vw;
 	height: 100px;
 	background-color: white;
 	font-size: 45px;
@@ -230,6 +218,7 @@ a{
 
 .after span{
 	width: 50%;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -248,7 +237,7 @@ a{
 	}
 }
 @media screen and (max-width: 890px){
-	.about img{
+	.stars img{
 		width: 240px;
 		height: 50px;
 	}
@@ -257,7 +246,7 @@ a{
 	.associação{
 		height: 200px;
 	}
-	.rank .center img{
+	.rank .center :nth-child(2){
 		width: 250px;
 		height: 200px;
 	}
@@ -265,7 +254,7 @@ a{
 		font-size: 40px;
 		margin-left: 0px;
 	}
-	.about img{
+	.stars img{
 		width: 200px;
 		height: 40px;
 	}
