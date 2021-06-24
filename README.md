@@ -2,13 +2,10 @@
 
 ## Grupo: Wellington  & Emanuel
 
-### Wellington 
-- Main Page;
-- Search Page; 
-- Analytcs Page;
-
-### Emanuel 
-- Other ones
+- Main Page [Wellington];
+- Search Page [Wellington]; 
+- Analytcs Page [Wellington];
+- Other ones [Emanuel];
 
 ### Linguagens
 - HTML Project 
