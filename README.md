@@ -1,8 +1,6 @@
 # Vs-RankingProject [2018]
 
-### Grupo: 
-
-- Wellington  & Emanuel
+## Grupo: Wellington  & Emanuel
 
 ### Wellington 
 - Main Page;
