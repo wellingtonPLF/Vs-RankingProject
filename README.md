@@ -7,6 +7,4 @@
 - Analytcs Page --> Wellington;
 - Other ones --> Emanuel;
 
-### Linguagens
-- HTML Project 
-- CSS Project
+### Linguagens (HTML & CSS)
